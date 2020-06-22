@@ -1,6 +1,0 @@
-1. Vente ouverte
-2. Vente acceptee
-3. Reception payement
-4. Livraison article
-5. Client livre
-6. Vente annulee
