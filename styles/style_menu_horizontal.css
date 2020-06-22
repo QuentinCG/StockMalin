@@ -1,0 +1,56 @@
+    /* partie positionnement et déco */
+#menu{
+    text-align: center; /* centrer le texte */  
+}
+   #menu a {  
+        display:block;  
+		color: #fff;  
+        text-decoration:none;  
+    }	
+	#menu > li,  
+    #menu > li li {  
+        position: relative;  
+        display:inline-block;  
+        width: 190px;  
+        padding: 6px 15px;  
+        background-color: #777;  
+        background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);  
+    }  
+    #menu > li li { background: transparent none; }  
+    #menu > li li a { color: #444; }  
+    #menu > li li:hover { 
+        background-color: #eee;  
+        border-radius: 8px 8px 8px 8px;  
+		
+	}  
+    #menu > li {  
+        border-right: 1px solid #777;  
+        border-radius: 8px 8px 8px 8px;  
+    }  
+    #menu > li + li {  
+        border-left: 1px solid #aaa;  
+        border-right: 1px solid #777;  
+    }  
+
+    #menu > li:hover {  
+        background-color: #999;  
+        background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);  
+    }  
+    /* (presque) fin de la partie positionnement/déco */  
+    /* dans cette déclaration, on fixe le max-height */  
+    #menu ul {  
+        position: absolute;  
+        top: 66px; left:0;  
+        max-height:0em;  
+        margin:0; padding:0;  
+        background-color:#aaa;  
+        background-image: linear-gradient(#aaa,#fff);  
+        overflow:hidden;  
+        transition: 1s max-height 0.3s;  
+        border-radius: 8px 8px 8px 8px;  
+    }  
+    /* ici on change la valeur de max-height au :hover */  
+    #menu > li:hover ul {  
+        /* need an adaptation, lower is better, but see it large   */  
+        max-height:13em;  
+    }  

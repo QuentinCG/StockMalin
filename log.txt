@@ -1,0 +1,62 @@
+﻿------------V1.00 (Ajout articles/collections/types) :--------------
+28/12/2013 :
+-Ajout de la fonctionnalité "génération automatique de la description du bon coin"
+-Ajout du prix par collection/Suppression du prix par article
+-Ajout de la valeur de chaque collection
+-Ajout de la réference de stockage des collections
+-Suppression de la decription des collections (prennait trop de place)
+-Correction d'un bug lors de l'édition d'une collection (form dans un form)
+
+29/12/2013 :
+-Suppression du bug de la création de collections contenant un '
+-Possibilité de faire des numéros d'articles contenant des lettre
+-Suppression de l'affichage des articles si aucune collection n'a été choisie (cause : trop d'articles dans la base)
+-Ajout de l'interdiction de supprimer une collection/type si un client est lié à ceux ci (lien article-collection et collection-type déjà fait).
+
+------------V1.10 (Ajout des clients) :--------------
+30/12/2013 :
+-Correction d'un petit bug d'affichage des articles par collection dans collection.php
+-Ajout d'un titre pour chaque page
+-Ajout de la page des clients (clients.php) permettant d'éditer/ajouter/supprimer/ordonner des clients ainsi que de les lier à des collections/types.
+-Correction de deux erreurs lors de la génération de l'article du bon coin
+
+------------V1.20 (Ajout des achats) :--------------
+31/12/2013 :
+-Création du menu d'ajout d'articles pour les achats(/ventes)
+
+01/01/2014 :
+-Protection lors de la suppression d'un client/collection/article : Impossible de les supprimer si un article/collection/vente/achat est lié à celui ci (protections incomplètes avant cette modification).
+-Achats opérationnels
+
+02/01/2014 :
+-Recherche d'une collection avec un pseudo moteur de recherche dans la bdd (collection.php)
+-Suppression de l'affichage des collections lors du lancement de la page
+-Remise dans l'ordre des articles (dans article)
+-Possibilité d'ajouter un client en ne connaissant qu'un pseudo (prenom/pseudo).
+-Ajout du "prix unitaire" par article lors de l'achat (pour un futur "pamp automatique")
+
+------------V1.30 (Ajout des ventes) :--------------
+
+03/01/2014 :
+-Ajout de "fournisseur.php" + integration du fournisseur dans "achat.php"
+-Génération automatique des articles dispo pour les gros clients (Page supplementaire dans gestion de stock : collection.php-->génération d'un fichier pdf).
+-Ajout de la vente (vente.php+vente2.php)!
+
+17/01/2014 :
+-Ajout du PAMP automatique et suppression du PAMP manuel (manque de place).
+
+26/01/2014 :
+-Affichage uniquement des articles disponibles lors de la vente ainsi que les quantités associées.
+-Ajout de la valeur par type
+
+----------V1.40 (Correction de bugs + ajout de petites fonctionnalités) : -------
+
+31/03/2014 :
+- Petite erreur sur annonce le bon coin corrigée
+- PAMP Automatique : N'afficher que dux décimales
+- Dans les ventes : Clients livrés affichés après les ventes en cours (puis tri par date)
+- Affichage du numéro lors de la selection des articles lors de l'ajout d'un achat ou d'une vente
+
+
+----------V1.41 (Correction de bug) : -------
+-Correction bug affichage des articles si il y en a trop (article.php) !
