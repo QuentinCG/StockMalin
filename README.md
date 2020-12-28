@@ -23,7 +23,7 @@ Moreover, this project uses a very old revision of PHP (PHP5) that may not be su
 
 ## How to install on Windows ?
 
-1) Install <a target="_blank" href="https://www.wampserver.com/">Wamp server</a>
+1) Install <a target="_blank" href="https://www.wampserver.com/">Wamp server</a> (I would suggest to install <a href="https://sourceforge.net/projects/wampserver/files/WampServer%202/Wampserver%202.4/">Wamp Server 2.4</a> to have directly the correct PHP version and then don't do step 2)
 
 2) Once installed, right click on Wamp server icon and select "PHP->Version->5.x.x" with x any value.
 
